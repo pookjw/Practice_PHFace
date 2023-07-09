@@ -11,7 +11,7 @@ import Photos
 struct RootView: View {
     var body: some View {
         NavigationSplitView {
-            FacesView()
+            PeopleView()
                 .viewController { viewController in
                     guard let splitViewController: UISplitViewController = viewController.splitViewController else {
                         return

@@ -184,9 +184,9 @@ NS_HEADER_AUDIT_BEGIN(nullability, sendability)
 + (id) fetchPersonsForContacts:(id)arg1 options:(id)arg2;
 + (id) fetchPersonsForReferences:(id)arg1 photoLibrary:(id)arg2;
 + (id) fetchPersonsGroupedByAssetLocalIdentifierForAssets:(id)arg1 options:(id)arg2;
-+ (id) fetchPersonsInAsset:(id)arg1 options:(id)arg2; 
++ (id) fetchPersonsInAsset:(id)arg1 options:(id _Nullable)arg2; 
 + (id) fetchPersonsInAssets:(id)arg1 options:(id)arg2;
-+ (id) fetchPersonsWithLocalIdentifiers:(id)arg1 options:(id)arg2;
++ (id) fetchPersonsWithLocalIdentifiers:(id)arg1 options:(id _Nullable)arg2;
 + (id) fetchPersonsWithObjectIDs:(id)arg1 options:(id)arg2;
 + (id) fetchPersonsWithQuestionType:(unsigned short)arg1 options:(id)arg2;
 + (id) fetchPersonsWithType:(long)arg1 options:(id)arg2;

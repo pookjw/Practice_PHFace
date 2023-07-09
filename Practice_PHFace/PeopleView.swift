@@ -1,5 +1,5 @@
 //
-//  FacesView.swift
+//  PeopleView.swift
 //  Practice_PHFace
 //
 //  Created by Jinwoo Kim on 7/9/23.
@@ -8,13 +8,13 @@
 import SwiftUI
 import PhotosUI
 
-struct FacesView: View {
+struct PeopleView: View {
     @State private var selectedPhotoPickerItems: [PhotosPickerItem] = .init()
-    @State private var phFaces: [PHFace] = .init()
+    @State private var phPersons: [PHPerson] = .init()
     
     var body: some View {
-        List(phFaces, id: \.self) { phFace in
-            Text(String(describing: phFace))
+        List(phPersons, id: \.self) { phPerson in
+            Text(String(describing: phPerson))
         }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -29,19 +29,20 @@ struct FacesView: View {
                     .compactMap { $0.itemIdentifier }
                 let phAssets: PHFetchResult<PHAsset> = PHAsset.fetchAssets(withLocalIdentifiers: itemItemtifiers, options: nil)
                 
-                var phFaces: Set<PHFace> = .init()
+                var phPersons: Set<PHPerson> = .init()
                 phAssets.enumerateObjects { phAsset, _, _ in
-                    let _phFaces: PHFetchResult<PHFace> = PHFace.fetchFaces(inAsset: phAsset, options: nil) as! PHFetchResult<PHFace>
-                    _phFaces.enumerateObjects { phFace, _, _ in
-                        phFaces.insert(phFace)
+                    let fetchResult: PHFetchResult<PHPerson> = PHPerson.fetchPersons(inAsset: phAsset, options: nil) as! PHFetchResult<PHPerson>
+                    fetchResult.enumerateObjects { phPerson, _, _ in
+                        print("keyFace: \(phPerson.keyFace())") // PHFace
+                        phPersons.insert(phPerson)
                     }
                 }
                 
-                self.phFaces = .init(phFaces)
+                self.phPersons = .init(phPersons)
             }
     }
 }
 
 #Preview {
-    FacesView()
+    PeopleView()
 }

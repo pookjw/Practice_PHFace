@@ -10,7 +10,7 @@
 		4F1819922A5B01AF0078F16C /* Practice_PHFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819912A5B01AF0078F16C /* Practice_PHFaceApp.swift */; };
 		4F1819962A5B01B20078F16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1819952A5B01B20078F16C /* Assets.xcassets */; };
 		4F1819992A5B01B20078F16C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1819982A5B01B20078F16C /* Preview Assets.xcassets */; };
-		4F1819A42A5B01FE0078F16C /* FacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819A32A5B01FE0078F16C /* FacesView.swift */; };
+		4F1819A42A5B01FE0078F16C /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819A32A5B01FE0078F16C /* PeopleView.swift */; };
 		4F1819A62A5B02170078F16C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819A52A5B02170078F16C /* RootView.swift */; };
 		4F1819AC2A5B065A0078F16C /* ViewControllerReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */; };
 /* End PBXBuildFile section */
@@ -21,7 +21,7 @@
 		4F1819952A5B01B20078F16C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F1819982A5B01B20078F16C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F18199F2A5B01C30078F16C /* Practice_PHFace-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Practice_PHFace-Bridging-Header.h"; sourceTree = "<group>"; };
-		4F1819A32A5B01FE0078F16C /* FacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesView.swift; sourceTree = "<group>"; };
+		4F1819A32A5B01FE0078F16C /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		4F1819A52A5B02170078F16C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +58,7 @@
 			children = (
 				4F1819912A5B01AF0078F16C /* Practice_PHFaceApp.swift */,
 				4F1819A52A5B02170078F16C /* RootView.swift */,
-				4F1819A32A5B01FE0078F16C /* FacesView.swift */,
+				4F1819A32A5B01FE0078F16C /* PeopleView.swift */,
 				4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */,
 				4F1819952A5B01B20078F16C /* Assets.xcassets */,
 				4F1819972A5B01B20078F16C /* Preview Content */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1819A42A5B01FE0078F16C /* FacesView.swift in Sources */,
+				4F1819A42A5B01FE0078F16C /* PeopleView.swift in Sources */,
 				4F1819AC2A5B065A0078F16C /* ViewControllerReader.swift in Sources */,
 				4F1819922A5B01AF0078F16C /* Practice_PHFaceApp.swift in Sources */,
 				4F1819A62A5B02170078F16C /* RootView.swift in Sources */,
