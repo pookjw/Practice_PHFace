@@ -3,14 +3,19 @@
 //
 
 #import <Photos/Photos.h>
+#import "NSObject+Foundation_IvarDescription.h"
 
 NS_HEADER_AUDIT_BEGIN(nullability, sendability)
+
+@interface NSObject (Private)
+- (NSString *)_ivarDescription;
+@end
 
 @interface PHAsset (Private)
 + (id) fetchAssetsGroupedByFaceUUIDForFaces:(id)arg1;
 + (id) fetchAssetsForFaces:(id)arg1 options:(id)arg2;
 + (id) fetchAssetsForPerson:(id)arg1 faceCount:(unsigned long)arg2 options:(id)arg3;
-+ (id) fetchAssetsForPerson:(id)arg1 options:(id)arg2;
++ (id) fetchAssetsForPerson:(id)arg1 options:(id _Nullable)arg2;
 + (id) fetchAssetsForPersons:(id)arg1 options:(id)arg2;
 + (id) fetchAssetsForReferences:(id)arg1 photoLibrary:(id)arg2;
 + (id) fetchAssetsForSearchLookupIdentifier:(id)arg1 options:(id)arg2;

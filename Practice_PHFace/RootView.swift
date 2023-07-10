@@ -9,9 +9,11 @@ import SwiftUI
 import Photos
 
 struct RootView: View {
+    @State private var selectedPHPerson: PHPerson?
+    
     var body: some View {
         NavigationSplitView {
-            PeopleView()
+            PeopleView(selectedPHPerson: $selectedPHPerson)
                 .viewController { viewController in
                     guard let splitViewController: UISplitViewController = viewController.splitViewController else {
                         return
@@ -20,7 +22,9 @@ struct RootView: View {
                     splitViewController.displayModeButtonVisibility = .never
                 }
         } detail: {
-            
+            if let selectedPHPerson: PHPerson {
+                PersonView(phPerson: selectedPHPerson)
+            }
         }
         .onAppear {
             PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in

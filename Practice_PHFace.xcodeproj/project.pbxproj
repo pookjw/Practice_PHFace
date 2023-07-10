@@ -13,6 +13,10 @@
 		4F1819A42A5B01FE0078F16C /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819A32A5B01FE0078F16C /* PeopleView.swift */; };
 		4F1819A62A5B02170078F16C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819A52A5B02170078F16C /* RootView.swift */; };
 		4F1819AC2A5B065A0078F16C /* ViewControllerReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */; };
+		4F6E34DF2A5BD0BA0097CCAF /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E34DE2A5BD0BA0097CCAF /* PersonView.swift */; };
+		4F6E34E12A5BD38D0097CCAF /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E34E02A5BD38D0097CCAF /* AssetView.swift */; };
+		4F6E34E32A5BDCA00097CCAF /* FacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E34E22A5BDCA00097CCAF /* FacesView.swift */; };
+		4F6E34E62A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E34E42A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		4F1819A32A5B01FE0078F16C /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		4F1819A52A5B02170078F16C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReader.swift; sourceTree = "<group>"; };
+		4F6E34DE2A5BD0BA0097CCAF /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		4F6E34E02A5BD38D0097CCAF /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		4F6E34E22A5BDCA00097CCAF /* FacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesView.swift; sourceTree = "<group>"; };
+		4F6E34E42A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+Foundation_IvarDescription.mm"; sourceTree = "<group>"; };
+		4F6E34E52A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Foundation_IvarDescription.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +68,15 @@
 				4F1819912A5B01AF0078F16C /* Practice_PHFaceApp.swift */,
 				4F1819A52A5B02170078F16C /* RootView.swift */,
 				4F1819A32A5B01FE0078F16C /* PeopleView.swift */,
+				4F6E34DE2A5BD0BA0097CCAF /* PersonView.swift */,
+				4F6E34E02A5BD38D0097CCAF /* AssetView.swift */,
+				4F6E34E22A5BDCA00097CCAF /* FacesView.swift */,
 				4F1819AB2A5B065A0078F16C /* ViewControllerReader.swift */,
 				4F1819952A5B01B20078F16C /* Assets.xcassets */,
 				4F1819972A5B01B20078F16C /* Preview Content */,
 				4F18199F2A5B01C30078F16C /* Practice_PHFace-Bridging-Header.h */,
+				4F6E34E52A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.h */,
+				4F6E34E42A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.mm */,
 			);
 			path = Practice_PHFace;
 			sourceTree = "<group>";
@@ -147,7 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1819A42A5B01FE0078F16C /* PeopleView.swift in Sources */,
+				4F6E34E12A5BD38D0097CCAF /* AssetView.swift in Sources */,
+				4F6E34E32A5BDCA00097CCAF /* FacesView.swift in Sources */,
 				4F1819AC2A5B065A0078F16C /* ViewControllerReader.swift in Sources */,
+				4F6E34DF2A5BD0BA0097CCAF /* PersonView.swift in Sources */,
+				4F6E34E62A5BDEB80097CCAF /* NSObject+Foundation_IvarDescription.mm in Sources */,
 				4F1819922A5B01AF0078F16C /* Practice_PHFaceApp.swift in Sources */,
 				4F1819A62A5B02170078F16C /* RootView.swift in Sources */,
 			);

@@ -9,12 +9,17 @@ import SwiftUI
 import PhotosUI
 
 struct PeopleView: View {
+    @Binding private var selectedPHPerson: PHPerson?
     @State private var selectedPhotoPickerItems: [PhotosPickerItem] = .init()
     @State private var phPersons: [PHPerson] = .init()
     
+    init(selectedPHPerson: Binding<PHPerson?>) {
+        _selectedPHPerson = selectedPHPerson
+    }
+    
     var body: some View {
-        List(phPersons, id: \.self) { phPerson in
-            Text(String(describing: phPerson))
+        List(phPersons, id: \.self, selection: _selectedPHPerson) { phPerson in
+            Text(phPerson.px_localIdentifier() as! String)
         }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -33,7 +38,6 @@ struct PeopleView: View {
                 phAssets.enumerateObjects { phAsset, _, _ in
                     let fetchResult: PHFetchResult<PHPerson> = PHPerson.fetchPersons(inAsset: phAsset, options: nil) as! PHFetchResult<PHPerson>
                     fetchResult.enumerateObjects { phPerson, _, _ in
-                        print("keyFace: \(phPerson.keyFace())") // PHFace
                         phPersons.insert(phPerson)
                     }
                 }
@@ -44,5 +48,5 @@ struct PeopleView: View {
 }
 
 #Preview {
-    PeopleView()
+    PeopleView(selectedPHPerson: .constant(nil))
 }
